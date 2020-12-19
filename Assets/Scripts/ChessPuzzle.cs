@@ -8,6 +8,7 @@ public class ChessPuzzle : MonoBehaviour
     public List<Collider> boxes;
 
     public GameObject projectorParticles;
+    public Animator door;
 
     private bool activated = false;
     private ParticleSystem projPartSys;
@@ -36,5 +37,6 @@ public class ChessPuzzle : MonoBehaviour
         activated = true;
         projectorParticles.SetActive(true);
         projPartSys.Play();
+        door.SetBool("character_nearby", true);
     }
 }
