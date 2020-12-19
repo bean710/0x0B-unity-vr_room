@@ -6,7 +6,7 @@ public class PieceTrigger : MonoBehaviour
 {
     public ChessPuzzle chessPuzzle;
 
-    private void OnCollisionEnter(Collision other) {
+    private void OnTriggerEnter(Collider other) {
         chessPuzzle.CheckSolution();
     }
 }

@@ -38,6 +38,6 @@ public class KeypadController : MonoBehaviour
     public void EnterNumber(int num)
     {
         if (!unlocked)
-            entered = num.ToString() + entered.Substring(0, entered.Length - 1);
+            entered = entered.Substring(1) + num.ToString();
     }
 }
